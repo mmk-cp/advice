@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'btitr';
+    src: url('../fonts/BTitrBold.woff') format('woff'),
+    url('../fonts/BTitrBold.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'btraffic';
+    src: url('../fonts/BTraffic.woff') format('woff'),
+    url('../fonts/BTraffic.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: btraffic;
+    color: white;
+}
+
+input, select, option {
+    color: black;
+}
+
+body {
+    background-color: black;
+    font-size: 14px;
+    direction: rtl;
+}
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+#container {
+    border: 2px solid white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#person {
+    position: relative;
+}
+
+#person img {
+    width: 250px;
+}
+
+#message {
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#message p {
+    font-size: 500%;
+    font-family: btitr;
+}
+
+#title {
+    color: white;
+    text-align: right;
+    font: 20px btitr;
+    margin-bottom: 10px;
+}
+
+#label {
+    font: 150% btitr;
+}
+
+#question {
+    font: 150% btraffic;
+}
+
+#new-q {
+    margin-top: 10px;
+}
+
+#new-q input, #new-q select {
+    padding: 5px 10px;
+}
+
+#new-q input[type=text] {
+    width: 300px;
+}
+
+#new-q input~input {
+    margin-right: 5px;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#person-name {
+    text-align: center;
+    font-size: 200%;
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    background-color: #0000005e;
+}
